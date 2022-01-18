@@ -187,7 +187,6 @@ th {
 
 table { margin: 0 auto; }
 
-.mt5, .body-content > * + * { margin-top:128px; }
 
 .body-content { padding-bottom:128px; }
 
@@ -240,4 +239,29 @@ table { margin: 0 auto; }
 
 .about__text {
     flex:1;
+}
+
+.pivot-centre,
+.pivot-centre > tbody {
+    display:flex;
+    flex-direction: column;
+}
+
+.pivot-centre tr {
+    display:flex;
+    flex-direction: row;
+}
+
+.pivot-centre td,
+.pivot-centre th {
+    flex:1;
+}
+
+
+.mt5, .body-content > * + * { margin-top:128px; }
+
+footer {
+    background:#ccc;
+    padding:64px;
+    text-align: center;
 }
