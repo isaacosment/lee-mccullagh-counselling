@@ -277,7 +277,12 @@ footer {
     display:flex;
 }
 
-@media screen and (max-width:800px) {
+.footer__text {
+    text-align:left;
+    color:#ddd;
+}
+
+@media screen and (max-width:1000px) {
     .topbar__content {
         flex-direction: column;
     }
@@ -324,8 +329,6 @@ footer {
     }
 
     .footer__text {
-        text-align:left;
-        color:#ddd;
         padding:16px;
     }
 
