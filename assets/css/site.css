@@ -287,6 +287,12 @@ footer {
         flex-direction: column;
     }
 
+    .topbar__logo {
+        font-size:1.2em;
+        margin-bottom:10px;
+        font-weight:500;
+    }
+
     .body-content {
         padding-left:16px;
         padding-right:16px;
