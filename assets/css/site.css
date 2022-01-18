@@ -1,9 +1,20 @@
 html, body {
     margin:0;
     height:100%;
+    line-height: 1.7;
 }
 
-h2 { font-weight: 300; }
+body {
+    background:#fdfdfd;
+    background-image:url('../images/backgrounds/cream_pixels.png');
+    background-repeat: repeat;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h2 { 
+    font-weight: 300;
+    font-size:2em;
+}
 
 a {
     text-decoration: none;
@@ -18,10 +29,6 @@ a:hover {
     color:gold;
 }
 
-body {
-    background:#eaeaea;
-    font-family: 'Work Sans', sans-serif;
-}
 
 .topbar {
     background:#222;
@@ -82,7 +89,7 @@ body {
 .intro-quote {
     font-size:1.3em;
     max-width:32em;
-    margin:128px auto;
+    margin:0 auto;
     text-align:center;
 }
 
@@ -109,7 +116,6 @@ body {
 .service-box__photo {
     width:300px;
     overflow:hidden;
-    max-height:350px;
 }
 
 .service-box__photo img {
@@ -190,7 +196,9 @@ table { margin: 0 auto; }
 .mw2 { max-width:35em; }
 
 .pt1 { padding-top:8px; }
+.pt5 { padding-top:128px; }
 .pb2 { padding-bottom:24px; }
+.p3 { padding:48px; }
 
 
 .contact-box__title::after { border-top:1px solid #009e60; }
@@ -205,4 +213,31 @@ table { margin: 0 auto; }
     background-size:cover;
     background-position: 50% 100%;
     background-attachment: fixed;
+}
+
+.about {
+    
+    padding:128px 0;
+}
+
+.about__content {
+    background:white;
+    box-shadow:0 0 16px rgba(27, 27, 27, 0.11);
+}
+
+.about__photo {
+    width:400px;
+    overflow:hidden;
+}
+
+.about__photo img {
+    border:2px;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about__text {
+    flex:1;
 }
