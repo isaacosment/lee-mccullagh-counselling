@@ -1,6 +1,9 @@
+* { box-sizing: border-box; }
+
 html, body {
     margin:0;
     height:100%;
+    width:100%;
     line-height: 1.7;
 }
 
@@ -25,6 +28,8 @@ img {
     max-width:100%;
 }
 
+.nw { white-space: nowrap;}
+
 a:hover {
     color:gold;
 }
@@ -37,7 +42,7 @@ a:hover {
 }
 
 .topbar a {
-    padding:0 8px;
+    padding:0 8px 0 0;
 }
 
 .header {
@@ -48,6 +53,7 @@ a:hover {
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
+    line-height:1.2;
 }
 
 .header__heading {
@@ -69,11 +75,13 @@ a:hover {
 }
 
 .centre-container {
+    width:100%;
     max-width:1200px;
     margin:0 auto;
 }
 
-.flex {
+.flex,
+.topbar__content {
     display:flex;
     flex-direction:row;
 }
@@ -147,6 +155,7 @@ a:hover {
 address {
     white-space:pre-line;
     font-style:normal;
+    display:inline;    
 }
 
 th, 
@@ -239,6 +248,7 @@ table { margin: 0 auto; }
 
 .about__text {
     flex:1;
+    padding:48px;
 }
 
 .pivot-centre,
@@ -261,7 +271,75 @@ table { margin: 0 auto; }
 .mt5, .body-content > * + * { margin-top:128px; }
 
 footer {
-    background:#ccc;
+    background:#222;
     padding:64px;
     text-align: center;
+    display:flex;
+}
+
+@media screen and (max-width:800px) {
+    .topbar__content {
+        flex-direction: column;
+    }
+
+    .body-content {
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    .service-box {
+        flex-direction: column;
+    }
+
+    .service-box__photo {
+        width:100%;
+        max-height: 350px;
+    }
+
+    table,
+    tbody,
+    tr,
+    td,
+    th
+     {
+        display:block;
+    }
+
+    .contact-box__details-table th,
+    .contact-box__details-table td {
+        text-align: center;
+    }
+
+    .contact-box {
+        padding: 16px;
+    }
+
+    .about__content,
+    .footer__content {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .footer__text {
+        text-align:left;
+        color:#ddd;
+        padding:16px;
+    }
+
+    .footer__map {
+        width:100%;
+    }
+
+    .body-content {
+        padding-bottom: 48px;
+    }
+
+    .about__text {
+        padding:16px;
+    }
+
+    h2 { font-size:1.6em; }
 }

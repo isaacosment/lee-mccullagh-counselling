@@ -7,6 +7,8 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-PJ4KDH3');</script>
 		<!-- End Google Tag Manager -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +22,9 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ4KDH3"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		
+
 		<div class="topbar">
-			<div class="centre-container flex">
+			<div class="centre-container topbar__content">
 				<div>
 					McCullagh Counselling
 				</div>
@@ -32,9 +34,9 @@
 					<a href="#contact">Contact</a>
 					<a href="#about-me">About me</a>
 					|
-					<a href="tel:+61418744377" class="text-primary">0418 744 377</a>
-					|
-					<a href="#facebook"><i class="fab fa-facebook"></i></a>
+					<a href="tel:+61418744377" class="text-primary nw">0418 744 377</a>
+					<!--|
+					<a href="#facebook"><i class="fab fa-facebook"></i></a>-->
 				</div>
 			</div>			
 		</div>
@@ -129,7 +131,7 @@
 
 		<div class="centre-container body-content">
 			<div class="centred info-box mt5">
-				<h2>Session information & fees</h2>
+				<h2>Session information <span class="nw">&amp; fees</span></h2>
 				<table class="pivot-centre" style="position:relative;left:-30px;">
 					<tr>
 						<th>Cost per session</th>
@@ -175,7 +177,7 @@
 					<div class="about__photo">
 						<img src="assets/images/profile-photo-expanded.jpg" alt="Photo of Lee McCullagh, Counsellor" />
 					</div>
-					<div class="about__text p3">
+					<div class="about__text">
 						<h2>About Lee McCullagh</h2>
 
 						<div>When working with you I value kindness, honesty & respect.</div>
@@ -212,28 +214,40 @@
 
 			</form>
 		</div>
-
+		<!--
 		<div style="height:480px;">
 			&nbsp;
 		</div>
-
+		-->
 		<footer>
-			<div>
-
-			</div>
-			<div>
-				
-			</div>
-			<div>
-				<iframe
-					width="600"
-					height="450"
-					style="border:0"
-					loading="lazy"
-					allowfullscreen
-					src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-						&q=Space+Needle,Seattle+WA">
-				</iframe>
+			<div class="centre-container flex footer__content">
+				<div class="footer__text">
+					<h3>Contact me</h3>
+					Phone: <a href="tel:+61418744377" class="text-primary">0418 744 377</a>
+					<br>
+					Email: <a href="mailto:lee@mccullaghcounselling.com.au" class="text-primary">lee@mccullaghcounselling.com.au</a>
+					<br>
+					Address: 
+					<a href="https://www.google.com/maps/place/Renew+%26+Revitalise/@-27.563868,151.9284637,16z/data=!4m13!1m7!3m6!1s0x6b965c889334df6f:0x8c87dd2ce4da6858!2s119+Anzac+Ave,+Newtown+QLD+4350!3b1!8m2!3d-27.5638378!4d151.9305997!3m4!1s0x6b965d884f058649:0xff4c7a7867ac0b93!8m2!3d-27.5638464!4d151.9306675">
+						<address>119 Anzac Avenue, Toowoomba QLD 4350</address>
+					</a>
+					<br>
+					<br>
+					<a href="#facebook"><i class="fab fa-facebook fa-lg"></i></a>
+				</div>
+				<div style="flex:1;">&nbsp;</div>
+				<div>
+					<iframe
+						width="350"
+						height="350"
+						class="footer__map"
+						style="border:0;max-width: 100%;"
+						loading="lazy"
+						allowfullscreen
+						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDgjbH_angU0cyQkcZqcwRuAYw_JznKn6E
+							&q=place_id:ChIJSYYFT4hdlmsRkwusZ3h6TP8&">
+					</iframe>
+				</div>
 			</div>
 		</footer>
 	</body>
