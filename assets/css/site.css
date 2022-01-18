@@ -337,7 +337,8 @@ footer {
         padding-bottom: 48px;
     }
 
-    .about__text {
+    .about__text,
+    .service-box__content {
         padding:16px;
     }
 
