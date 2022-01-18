@@ -304,13 +304,15 @@ label {
     font-size:.9em;
 }
 
-input {
+input,
+textarea {
     border:1px solid #ccc;
     border-radius:2px;
     padding:12px;
 }
 
-input:active {
+input:active,
+textarea:active {
     border-color:rgb(0, 153, 255);
 }
 
@@ -327,7 +329,9 @@ button {
     font-size:1.1em;
 }
 
-input, form button {
+input,
+textarea, 
+form button {
     width:100%;
 }
 
