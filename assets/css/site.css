@@ -34,11 +34,16 @@ a:hover {
     color:gold;
 }
 
+.separator { padding:8px; display:inline-block; }
 
 .topbar {
     background:#222;
     color:#fff;
     padding:24px 16px;
+}
+
+.topbar__content {
+    align-items: center;
 }
 
 .topbar a {
@@ -333,6 +338,22 @@ input,
 textarea, 
 form button {
     width:100%;
+}
+
+textarea {
+    font-family: inherit;
+}
+
+.topbar__logo {
+    line-height: 1.5;text-align: center;
+}
+
+.logo__line1 {
+    font-family:'Dancing Script';font-size:1.6em;
+}
+
+.logo__line2 {
+    border-top:1px solid #888;color:#ccc;font-size:.9em;margin:0 auto;width: auto;
 }
 
 @media screen and (max-width:1000px) {
